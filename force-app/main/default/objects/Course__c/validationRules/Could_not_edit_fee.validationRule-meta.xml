@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Could_not_edit_fee</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISCHANGED(Fees__c)</errorConditionFormula>
+    <errorDisplayField>Fees__c</errorDisplayField>
+    <errorMessage>&quot;You are not allowed to edit the Fee field.&quot;</errorMessage>
+</ValidationRule>

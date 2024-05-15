@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>First_Email</fullName>
+        <ccEmails>sohail.sdwbi@gmail.com</ccEmails>
+        <description>First Email</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MarketingProductInquiryResponse</template>
+    </alerts>
+    <alerts>
+        <fullName>Scheduled_Action</fullName>
+        <ccEmails>shaik.techy2006@gmail.com,</ccEmails>
+        <ccEmails>sohail.sdwbi@gmail.com</ccEmails>
+        <description>Scheduled Action</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sohailbatch163_user2@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sshaik@hydropoint.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MarketingProductInquiryResponse</template>
+    </alerts>
+    <alerts>
+        <fullName>mail_to_doc</fullName>
+        <description>mail to doc</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sohailbatch163_user5@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sshaik@hydropoint.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MarketingProductInquiryResponse</template>
+    </alerts>
+    <alerts>
+        <fullName>new_mail</fullName>
+        <ccEmails>sohail.sdwbi@gmail.com</ccEmails>
+        <description>new mail</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sshaik@hydropoint.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>change_name</fullName>
+        <field>Name</field>
+        <formula>&apos; Costly &apos; + Name</formula>
+        <name>change name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>fup1</fullName>
+        <field>Fees__c</field>
+        <formula>400</formula>
+        <name>fup1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Expensive Doctor</fullName>
+        <actions>
+            <name>new_mail</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>change_name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>important</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Doctor__c.Fees__c</field>
+            <operation>greaterThan</operation>
+            <value>150</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Scheduled_Action</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>welcome</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>imp_Work</fullName>
+        <assignedTo>sshaik@hydropoint.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>imp Work</subject>
+    </tasks>
+    <tasks>
+        <fullName>important</fullName>
+        <assignedTo>sshaik@hydropoint.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Meet this doctor immediately.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Doctor__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>important</subject>
+    </tasks>
+    <tasks>
+        <fullName>welcome</fullName>
+        <assignedTo>sshaik@hydropoint.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>go to sleep till then</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>welcome</subject>
+    </tasks>
+</Workflow>

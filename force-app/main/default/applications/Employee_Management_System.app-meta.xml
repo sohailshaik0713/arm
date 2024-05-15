@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>This apps helps to know the employees working on different technologies and get oppurtunity to work in organisations.</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Employee Management System</label>
+    <tabs>Employee__c</tabs>
+    <tabs>Salary__c</tabs>
+    <tabs>Company__c</tabs>
+</CustomApplication>

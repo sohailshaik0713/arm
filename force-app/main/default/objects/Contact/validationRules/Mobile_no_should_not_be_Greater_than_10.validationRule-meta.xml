@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_no_should_not_be_Greater_than_10</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(REGEX(Phone, &quot;^[0-9]{10}$&quot;))</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Mobile should contain 10 digits</errorMessage>
+</ValidationRule>

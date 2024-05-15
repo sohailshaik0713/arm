@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>First Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>X8PM</publicGroup>
+        </publicGroups>
+        <users>
+            <user>sohailbatch163_user4@gmail.com</user>
+            <user>sohailbatch163_user5@gmail.com</user>
+            <user>sshaik@hydropoint.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Customer</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Doctor__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Employee__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Pupil__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Test__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Trainer__c</sobjectType>
+    </queueSobject>
+</Queue>

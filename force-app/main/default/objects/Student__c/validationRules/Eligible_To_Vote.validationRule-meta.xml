@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligible_To_Vote</fullName>
+    <active>false</active>
+    <errorConditionFormula>TODAY() - 6570 &lt;  DOB__c</errorConditionFormula>
+    <errorDisplayField>DOB__c</errorDisplayField>
+    <errorMessage>Voter must be above 18 years age</errorMessage>
+</ValidationRule>

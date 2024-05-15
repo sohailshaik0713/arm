@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_should_be_10k</fullName>
+    <active>true</active>
+    <errorConditionFormula>Amount &lt; 10000  ||  Amount &gt; 20000</errorConditionFormula>
+    <errorDisplayField>Amount</errorDisplayField>
+    <errorMessage>Amount must be &gt; 10K &amp; &lt; 20K</errorMessage>
+</ValidationRule>

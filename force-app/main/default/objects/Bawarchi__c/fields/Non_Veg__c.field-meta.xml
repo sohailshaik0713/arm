@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Veg__c</fullName>
+    <externalId>false</externalId>
+    <label>Non Veg</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mutton Biryani</fullName>
+                <default>false</default>
+                <label>Mutton Biryani</label>
+            </value>
+            <value>
+                <fullName>Kababs</fullName>
+                <default>false</default>
+                <label>Kababs</label>
+            </value>
+            <value>
+                <fullName>Chicken Biryani</fullName>
+                <default>false</default>
+                <label>Chicken Biryani</label>
+            </value>
+            <value>
+                <fullName>Bheja Fry</fullName>
+                <default>false</default>
+                <label>Bheja Fry</label>
+            </value>
+            <value>
+                <fullName>Fish Curry</fullName>
+                <default>false</default>
+                <label>Fish Curry</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

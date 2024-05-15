@@ -1,0 +1,15 @@
+<template>
+	<lightning-card title="Custom Labels">
+		{customLabels}
+		<template if:true={customLabels}>
+			<ul>
+				<template for:each={customLabels} for:item="label">
+					<li key={label}>{label}</li>
+				</template>
+			</ul>
+		</template>
+		<template if:false={customLabels}>
+			No Custom Labels found.
+		</template>
+	</lightning-card>
+</template>

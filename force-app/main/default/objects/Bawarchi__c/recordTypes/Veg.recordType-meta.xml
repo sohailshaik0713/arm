@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Veg</fullName>
+    <active>true</active>
+    <label>Veg</label>
+    <picklistValues>
+        <picklist>Non_Veg__c</picklist>
+        <values>
+            <fullName>Bheja Fry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicken Biryani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fish Curry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kababs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mutton Biryani</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Veg__c</picklist>
+        <values>
+            <fullName>Fried Rice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gobi Manchuria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeera Rice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sambar Rice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandwich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veg Burger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veg Puff</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

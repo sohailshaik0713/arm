@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pan_Number_Rule</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(
+REGEX
+(
+Pan_Number__c , &quot;[A-Z]{5}[0-9]{4}[A-Z]{1}&quot;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Pan_Number__c</errorDisplayField>
+    <errorMessage>Enter Valid Pan Card Number</errorMessage>
+</ValidationRule>

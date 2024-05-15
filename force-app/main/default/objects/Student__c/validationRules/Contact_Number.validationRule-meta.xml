@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Number</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(OR((LEFT( Contact_Number__c , 1) = &apos;9&apos;),
+(LEFT( Contact_Number__c , 1) = &apos;8&apos;),
+(LEFT( Contact_Number__c , 1) = &apos;7&apos;),
+(LEFT( Contact_Number__c , 1) = &apos;6&apos;)))</errorConditionFormula>
+    <errorDisplayField>Contact_Number__c</errorDisplayField>
+    <errorMessage>Number must be 10 digit  and start with 9,8,7,6</errorMessage>
+</ValidationRule>
