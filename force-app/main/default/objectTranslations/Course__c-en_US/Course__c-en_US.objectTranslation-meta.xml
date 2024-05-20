@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Course</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Courses</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Could_not_edit_fee</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Course_can_be_changed_to_other_modes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Course_greater_than_5000</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Dont_allow_to_change_course_name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Price_should_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>start_date_should_greater_than_end_date</name>
+    </validationRules>
+</CustomObjectTranslation>

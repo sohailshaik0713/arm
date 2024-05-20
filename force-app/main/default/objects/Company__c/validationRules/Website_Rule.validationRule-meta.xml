@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Website_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(
+LEFT( Web_site__c ,4) = &quot;www.&quot;  || LEFT( Web_site__c ,4) = &quot;WWW.&quot;  &amp;&amp; 
+ RIGHT( Web_site__c ,4) = &quot;.com&quot; || RIGHT( Web_site__c ,4) = &quot;.COM&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Web_site__c</errorDisplayField>
+    <errorMessage>it should start with www. &amp; .com</errorMessage>
+</ValidationRule>

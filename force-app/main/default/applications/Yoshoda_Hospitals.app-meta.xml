@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Multispeciality Hopsital</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Yoshoda Hospitals</label>
+    <tabs>Patient__c</tabs>
+    <tabs>Doctor__c</tabs>
+    <tabs>Test__c</tabs>
+    <tabs>Operation_Theatre__c</tabs>
+    <tabs>Bottle__c</tabs>
+</CustomApplication>

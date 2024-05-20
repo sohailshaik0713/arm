@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Status_New</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL( Contact_Status__c ,&quot;New&quot;),
+  OR(
+    ISBLANK(Phone),
+    ISBLANK(Fax)
+    )  
+)</errorConditionFormula>
+    <errorMessage>Phone and Fax should be applicable for only new contact</errorMessage>
+</ValidationRule>

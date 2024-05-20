@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DOB_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>YEAR(Date_of_Birth__c) = YEAR(TODAY())</errorConditionFormula>
+    <errorDisplayField>Date_of_Birth__c</errorDisplayField>
+    <errorMessage>&quot;Please enter a valid date of birth. The present year is not allowed.&quot;</errorMessage>
+</ValidationRule>

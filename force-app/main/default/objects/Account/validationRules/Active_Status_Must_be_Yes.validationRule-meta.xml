@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Status_Must_be_Yes</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+  ISNEW(),
+  NOT( ISPICKVAL( Active__c , &quot;Yes&quot;) ) 
+)</errorConditionFormula>
+    <errorMessage>Account Active status must be Yes</errorMessage>
+</ValidationRule>

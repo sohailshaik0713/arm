@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>If_Account_Owner_is_Changed</name>
+        <label>If Account Owner is Changed</label>
+        <locationX>502</locationX>
+        <locationY>63</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>AccountOwnerChanged</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.OwnerId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Platform_Event_Record</targetReference>
+            </connector>
+            <label>AccountOwnerChanged</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Platform Event - Assign Permission Set {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Platform Event - Assign Permission Set</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Platform_Event_Record</name>
+        <label>Create Platform Event Record</label>
+        <locationX>459</locationX>
+        <locationY>367</locationY>
+        <inputAssignments>
+            <field>Account_Owner_Id__c</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Assign_Permsn_Set__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>63</locationX>
+        <locationY>51</locationY>
+        <connector>
+            <targetReference>If_Account_Owner_is_Changed</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

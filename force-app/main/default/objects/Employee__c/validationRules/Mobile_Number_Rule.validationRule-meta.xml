@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Number_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(NOT(
+ OR(
+BEGINS( Mobile_No__c ,&apos;9&apos;),
+BEGINS( Mobile_No__c ,&apos;8&apos;),
+BEGINS( Mobile_No__c ,&apos;7&apos;),
+BEGINS( Mobile_No__c ,&apos;6&apos;)
+) 
+),
+LEN( Mobile_No__c ) &lt;&gt; 10
+)</errorConditionFormula>
+    <errorDisplayField>Mobile_No__c</errorDisplayField>
+    <errorMessage>Mobile Number must be 10 digit and start with 9,7,8,6</errorMessage>
+</ValidationRule>

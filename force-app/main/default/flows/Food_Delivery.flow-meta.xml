@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Food Delivery {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Food Delivery</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Inserting_Records</name>
+        <label>Inserting Records</label>
+        <locationX>629</locationX>
+        <locationY>360</locationY>
+        <inputAssignments>
+            <field>Customer_Email__c</field>
+            <value>
+                <elementReference>Cust_Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Phone__c</field>
+            <value>
+                <elementReference>Cust_Number</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Customer_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Customer_Detail__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <screens>
+        <name>Food_App</name>
+        <label>Food App</label>
+        <locationX>276</locationX>
+        <locationY>217</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Inserting_Records</targetReference>
+        </connector>
+        <fields>
+            <name>Customer_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Customer Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Cust_Email</name>
+            <dataType>String</dataType>
+            <fieldText>Cust Email</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Cust_Number</name>
+            <dataType>String</dataType>
+            <fieldText>Cust Number</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>373</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Food_App</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

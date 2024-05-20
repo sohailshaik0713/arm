@@ -1,0 +1,108 @@
+<template>
+    <div style="background-color: rgba(27, 42, 212, 0.685);">
+        <div class="slds-var-p-around_large">
+            <lightning-card title="Custom Label Configuration" icon-name="standard:account">
+                <div class="slds-var-p-around_large">
+ 
+                    <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+                        <lightning-button variant="Brand" class="slds-button slds-m-right" label="Save"
+                            onclick={handleSaveConfiguration}></lightning-button>&nbsp;
+                        <lightning-button variant="Brand" class="slds-button slds-m-right" label="Edit"
+                            onclick={handleEditConfiguration}></lightning-button>&nbsp;
+                        <lightning-button variant="Brand" class="slds-button slds-m-right" label="Clone"
+                            onclick={handleCloneConfiguration}></lightning-button>
+                    </div>
+ 
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-2 slds-var-m-bottom_medium">
+                            <lightning-input type="text" label="Name" value={tName}
+                                onchange={handelFnameChange}></lightning-input>
+                            <lightning-input type="text" label="Org Name" value={OrgName}
+                                onchange={handelLnameChange}></lightning-input>
+                        </div>
+                    </div>
+                   
+                    <p class="slds-var-p-left_x-small" style="text-align:right">
+                        <lightning-button variant="success" class="success" label="Add"
+                            onclick={add}></lightning-button>
+                    </p>
+                   
+                    <div class="slds-var-p-around_small">
+                        <lightning-combobox label="Custom Metadata" value={selectedValue} options={picklistOptions}
+                            onchange={handlePicklistChange}>
+                        </lightning-combobox>
+                    </div>
+ 
+ 
+                    <lightning-tabset active-tab-value={activeTab}>
+                        <div class="slds-m-around_x-small">
+ 
+                            <lightning-tab label="Metadata"  value="1" onactive={handleActive}>
+                                <template if:true={datatableToggle}>
+                                    <lightning-datatable key-field="id"
+                                                         onrowselection={selectedrowshandler}
+                                                         columns={dtcol}
+                                                         data={apexclassesData}>
+                                    </lightning-datatable>
+                                </template>    
+                               
+                                <template if:true={customlabelToggle}>
+                                    <lightning-datatable key-field="Name"
+                                                         columns={labelColumns}
+                                                         data={customLabelsData}
+                                                         onrowselection={selectedrowshandler}>
+                                    </lightning-datatable>
+                                </template>
+                            </lightning-tab>
+                           
+                            <lightning-tab label="Selected Metadata"  value="2" onactive={handleActive}>
+                                <template if:true={selectedDataflag}>
+                                    <lightning-datatable key-field="id"
+                                                        columns={dtcol}
+                                                        data={selectedapexclassesData}>
+                                    </lightning-datatable>
+                                </template>
+                            </lightning-tab>
+                        </div>
+                    </lightning-tabset>
+
+                    <!-- <lightning-tabset active-tab-value={activeTab}>
+                        <lightning-tab label="Metadata" value="1" onactive={handleActive}>
+                            <template if:true={datatableToggle}>
+                                <lightning-datatable key-field="id"
+                                                     onrowselection={selectedrowshandler}
+                                                     columns={dtcol}
+                                                     data={apexclassesData}>
+                                </lightning-datatable>
+                            </template>
+                            <template if:true={customlabelToggle}>
+                                <lightning-datatable key-field="Name"
+                                                     columns={labelColumns}
+                                                     data={customLabelsData}
+                                                     onrowselection={selectedrowshandler}>
+                                </lightning-datatable>
+                            </template>
+                        </lightning-tab>
+                        <lightning-tab label="Selected Metadata" value="2" onactive={handleActive}>
+                            <template if:true={selectedDataflag}>
+                                <lightning-datatable key-field="id"
+                                                     columns={dtcol}
+                                                     data={selectedapexclassesData}>
+                                </lightning-datatable>
+                            </template>
+                        </lightning-tab>
+                    </lightning-tabset> -->
+                    
+ 
+                    <!-- <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+                        <lightning-button variant="Neutral" class="slds-button slds-m-right" label="Cancel"
+                            onclick={handleCancel}></lightning-button>
+                        <lightning-button variant="Brand" class="slds-button slds-m-right" label="Deploy"
+                            onclick={handleDeploy}></lightning-button>
+                    </div> -->
+ 
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

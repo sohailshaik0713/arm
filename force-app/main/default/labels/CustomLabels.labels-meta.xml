@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Demo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Demo</shortDescription>
+        <value>Testing for LWC component</value>
+    </labels>
+    <labels>
+        <fullName>Demo2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Demo2</shortDescription>
+        <value>Custom label for LWC tesing</value>
+    </labels>
+    <labels>
+        <fullName>Demo3</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Demo3</shortDescription>
+        <value>Custom label retrieved by VF Page</value>
+    </labels>
+</CustomLabels>

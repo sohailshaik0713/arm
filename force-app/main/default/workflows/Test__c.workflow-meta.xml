@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Practice_Mail</fullName>
+        <ccEmails>sohail.sdwbi@gmail.com</ccEmails>
+        <description>Practice Mail</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sohailbatch163_user2@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sshaik@hydropoint.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SalesNewCustomerEmail</template>
+    </alerts>
+    <alerts>
+        <fullName>Test_Email</fullName>
+        <ccEmails>sohail.sdwbi@gmail.com,shaik.techy2006@gmail.com</ccEmails>
+        <description>Test Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sshaik@hydropoint.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MarketingProductInquiryResponse</template>
+    </alerts>
+    <rules>
+        <fullName>Practice</fullName>
+        <actions>
+            <name>Practice_Mail</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Test__c.Price__c</field>
+            <operation>equals</operation>
+            <value>100</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Test Rule</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Test__c.Price__c</field>
+            <operation>greaterThan</operation>
+            <value>100</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Test_Email</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>
