@@ -1024,6 +1024,8 @@
     </types>
     <types>
         <members>AccountTriggerHandler</members>
+        <members>Addition</members>
+        <members>AdditionTest</members>
         <members>AlarmClass</members>
         <members>AssertionTest</members>
         <members>AsyncTest</members>
@@ -2440,6 +2442,7 @@
         <members>Contact.Phone</members>
         <members>Contact.Pronouns</members>
         <members>Contact.ReportsToId</members>
+        <members>Contact.Test_Contact_Custom_Field__c</members>
         <members>Contact.Title</members>
         <members>ContactPointAddress.ActiveFromDate</members>
         <members>ContactPointAddress.ActiveToDate</members>
