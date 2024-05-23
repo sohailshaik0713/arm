@@ -1090,6 +1090,8 @@
         <members>ScheduleApex</members>
         <members>SecondQueue</members>
         <members>States</members>
+        <members>Subtraction</members>
+        <members>SubtractionTest</members>
         <members>TaskUtil</members>
         <members>TaskUtilTest</members>
         <members>Temperature</members>
