@@ -1066,6 +1066,8 @@
         <members>MetadataClass2</members>
         <members>MosquitoRacquet</members>
         <members>MosquitoRacquetTest</members>
+        <members>Multiplication</members>
+        <members>MultiplicationTest</members>
         <members>OOPsTest</members>
         <members>OlderAccountsUtility</members>
         <members>PetrolStation</members>
