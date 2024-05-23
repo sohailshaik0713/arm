@@ -1,7 +1,7 @@
 public class Multiplication {
     // Method to multiply two integers
     public static Integer multiply(Integer a, Integer b) {
-        return a * b;
+        return a + b; //changed arithmetic operator
     //Adding Changes to see this line in dev2 branch after merge
     //Once above line is available in dev2 edited this line for merge conflict
     }
