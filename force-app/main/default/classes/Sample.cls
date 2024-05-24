@@ -1,6 +1,6 @@
 public class Sample {
-    public static void test()
+    public static void testforMC()
     {
-        System.debug('This is a sample class');
+        System.debug('This is a demo class');
     }
 }
