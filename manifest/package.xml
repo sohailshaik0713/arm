@@ -1062,6 +1062,7 @@
         <members>ListClass</members>
         <members>MCTest</members>
         <members>ManchuClass</members>
+        <members>MergeConflictExample</members>
         <members>MetadataClass</members>
         <members>MetadataClass2</members>
         <members>MosquitoRacquet</members>
