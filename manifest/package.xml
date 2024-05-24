@@ -1325,6 +1325,8 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Account.Account_RT</members>
+        <members>Account.Account_RT_2</members>
         <members>BRE_Organisation__c.Organisation</members>
         <members>BRE_Organisation__c.Warehouse</members>
         <members>Bawarchi__c.Non_Veg</members>
@@ -1790,6 +1792,7 @@
         <members>Account.BillingAddress</members>
         <members>Account.CleanStatus</members>
         <members>Account.Commit_Field__c</members>
+        <members>Account.Currency__c</members>
         <members>Account.CustomerPriority__c</members>
         <members>Account.DandbCompanyId</members>
         <members>Account.Description</members>
