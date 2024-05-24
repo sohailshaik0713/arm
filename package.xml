@@ -1087,6 +1087,7 @@
         <members>RoPurifier</members>
         <members>RoPurifierTest</members>
         <members>RuntimeTest</members>
+        <members>Sample</members>
         <members>ScheduleApex</members>
         <members>SecondQueue</members>
         <members>States</members>
