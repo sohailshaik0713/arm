@@ -4,6 +4,17 @@
     <active>true</active>
     <label>Contact RT 2</label>
     <picklistValues>
+        <picklist>Contact_Status__c</picklist>
+        <values>
+            <fullName>existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>new</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>GenderIdentity</picklist>
         <values>
             <fullName>Female</fullName>
