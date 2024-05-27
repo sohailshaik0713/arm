@@ -31,8 +31,14 @@
                 <label>Mail</label>
             </value>
             <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
                 <fullName>In-Person</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>In-Person</label>
             </value>
         </valueSetDefinition>
