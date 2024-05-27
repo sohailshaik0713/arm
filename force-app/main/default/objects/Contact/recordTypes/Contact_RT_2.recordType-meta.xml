@@ -82,10 +82,6 @@
     <picklistValues>
         <picklist>Preferred_Contact_Method__c</picklist>
         <values>
-            <fullName>In-Person</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Mail</fullName>
             <default>false</default>
         </values>
