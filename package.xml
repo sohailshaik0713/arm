@@ -1329,6 +1329,8 @@
         <members>BRE_Organisation__c.Warehouse</members>
         <members>Bawarchi__c.Non_Veg</members>
         <members>Bawarchi__c.Veg</members>
+        <members>Contact.Contact_RT</members>
+        <members>Contact.Contact_RT_2</members>
         <members>Idea.InternalIdeasIdeaRecordType</members>
         <members>Position__c.IT_Position</members>
         <members>Position__c.Standard_Position</members>
@@ -2447,6 +2449,7 @@
         <members>Contact.OtherPhone</members>
         <members>Contact.OwnerId</members>
         <members>Contact.Phone</members>
+        <members>Contact.Preferred_Contact_Method__c</members>
         <members>Contact.Pronouns</members>
         <members>Contact.ReportsToId</members>
         <members>Contact.Test_Contact_Custom_Field__c</members>
