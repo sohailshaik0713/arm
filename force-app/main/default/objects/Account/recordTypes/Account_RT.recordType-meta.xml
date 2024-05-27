@@ -44,6 +44,10 @@
             <fullName>INR</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Pound</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Industry</picklist>
@@ -165,10 +169,6 @@
         </values>
         <values>
             <fullName>Telecommunications</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Test Value</fullName>
             <default>false</default>
         </values>
         <values>

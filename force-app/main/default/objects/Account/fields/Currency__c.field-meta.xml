@@ -30,6 +30,11 @@
                 <default>false</default>
                 <label>Dollar</label>
             </value>
+            <value>
+                <fullName>Pound</fullName>
+                <default>false</default>
+                <label>Pound</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
