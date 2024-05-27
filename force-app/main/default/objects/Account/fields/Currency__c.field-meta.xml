@@ -31,8 +31,14 @@
                 <label>Dollar</label>
             </value>
             <value>
+                <fullName>Yen</fullName>
+                <default>false</default>
+                <label>Yen</label>
+            </value>
+            <value>
                 <fullName>Pound</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Pound</label>
             </value>
         </valueSetDefinition>
