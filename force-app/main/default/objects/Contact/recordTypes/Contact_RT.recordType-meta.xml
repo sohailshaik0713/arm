@@ -36,6 +36,10 @@
             <fullName>Test</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>user</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>LeadSource</picklist>
