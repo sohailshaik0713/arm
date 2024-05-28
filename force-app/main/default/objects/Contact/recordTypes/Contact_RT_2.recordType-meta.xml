@@ -32,6 +32,10 @@
             <fullName>Not Listed</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Test</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>LeadSource</picklist>
@@ -49,6 +53,10 @@
         </values>
         <values>
             <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test</fullName>
             <default>false</default>
         </values>
         <values>
