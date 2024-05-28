@@ -26,4 +26,9 @@
         <default>false</default>
         <label>Other</label>
     </standardValue>
+    <standardValue>
+        <fullName>Test user</fullName>
+        <default>false</default>
+        <label>Test user</label>
+    </standardValue>
 </StandardValueSet>
