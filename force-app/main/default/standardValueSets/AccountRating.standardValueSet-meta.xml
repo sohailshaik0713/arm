@@ -17,8 +17,8 @@
         <label>Cold</label>
     </standardValue>
     <standardValue>
-        <fullName>Spring</fullName>
+        <fullName>Winter</fullName>
         <default>false</default>
-        <label>Spring</label>
+        <label>Winter</label>
     </standardValue>
 </StandardValueSet>
