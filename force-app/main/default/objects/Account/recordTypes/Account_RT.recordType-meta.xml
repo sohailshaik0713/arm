@@ -27,29 +27,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Currency__c</picklist>
-        <values>
-            <fullName>AED</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Dollar</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Euro</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>INR</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Yen</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Industry</picklist>
         <values>
             <fullName>Agriculture</fullName>
@@ -207,6 +184,10 @@
         </values>
         <values>
             <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spring</fullName>
             <default>false</default>
         </values>
     </picklistValues>
