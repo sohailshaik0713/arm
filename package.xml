@@ -614,6 +614,7 @@
         <members>AuthorizationFormConsent</members>
         <members>AuthorizationFormDataUse</members>
         <members>AuthorizationFormText</members>
+        <members>Automobile__c</members>
         <members>BRE_Organisation__c</members>
         <members>Batch__c</members>
         <members>Bawarchi__c</members>
@@ -1241,6 +1242,7 @@
         <members>Chatter External User</members>
         <members>Chatter Free User</members>
         <members>Chatter Moderator User</members>
+        <members>Cloned Marketing User</members>
         <members>ContractManager</members>
         <members>Cross Org Data Proxy User</members>
         <members>Custom%3A Marketing Profile</members>
@@ -2041,6 +2043,8 @@
         <members>AuthorizationFormText.Locale</members>
         <members>AuthorizationFormText.Name</members>
         <members>AuthorizationFormText.SummaryAuthFormText</members>
+        <members>Automobile__c.Make__c</members>
+        <members>Automobile__c.Purchase_Price__c</members>
         <members>BRE_Organisation__c.Consignment_Number__c</members>
         <members>BRE_Organisation__c.Operation_Unit__c</members>
         <members>BRE_Organisation__c.Product_Name__c</members>
