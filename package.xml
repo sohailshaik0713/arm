@@ -2044,6 +2044,7 @@
         <members>AuthorizationFormText.Name</members>
         <members>AuthorizationFormText.SummaryAuthFormText</members>
         <members>Automobile__c.Make__c</members>
+        <members>Automobile__c.Purchase_Date__c</members>
         <members>Automobile__c.Purchase_Price__c</members>
         <members>BRE_Organisation__c.Consignment_Number__c</members>
         <members>BRE_Organisation__c.Operation_Unit__c</members>

@@ -7,6 +7,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Automobile__c.Purchase_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Automobile__c.Purchase_Price__c</field>
         <readable>true</readable>
