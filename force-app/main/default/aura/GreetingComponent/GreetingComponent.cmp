@@ -1,0 +1,8 @@
+<aura:component>
+    <!-- Attributes -->
+    <aura:attribute name="greeting" type="String" default="Hello" />
+    <aura:attribute name="name" type="String" default="World" />
+
+    <!-- Body -->
+    <h1>{!v.greeting}, {!v.name}!</h1>
+</aura:component>

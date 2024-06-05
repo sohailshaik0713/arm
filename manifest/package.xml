@@ -1342,6 +1342,7 @@
     </types>
     <types>
         <members>DashboardPal</members>
+        <members>GreetingComponent</members>
         <members>Lwc_App</members>
         <name>AuraDefinitionBundle</name>
     </types>
