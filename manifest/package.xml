@@ -1582,6 +1582,7 @@
     <types>
         <members>CandidateMap</members>
         <members>GenerateSessionId</members>
+        <members>SamplePage</members>
         <name>ApexPage</name>
     </types>
     <types>
