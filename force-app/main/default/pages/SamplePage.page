@@ -1,0 +1,6 @@
+<apex:page >
+    <h1>Welcome to My Visualforce Page</h1>
+    
+    <c:SampleComponent greeting="Hello" name="John Doe" />
+    <c:SampleComponent greeting="Hi" name="Jane Smith" />
+</apex:page>
