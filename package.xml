@@ -4606,6 +4606,10 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
+        <members>SampleComponent</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
         <members>Internal Zone</members>
         <name>Community</name>
     </types>

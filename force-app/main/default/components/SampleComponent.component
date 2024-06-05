@@ -1,0 +1,6 @@
+<apex:component >
+    <apex:attribute name="greeting" type="String" description="Greeting message" />
+    <apex:attribute name="name" type="String" description="Name of the person" />
+    
+    <h2>{!greeting}, {!name}!</h2>
+</apex:component>
