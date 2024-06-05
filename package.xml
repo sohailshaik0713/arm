@@ -1339,6 +1339,7 @@
         <name>RecordType</name>
     </types>
     <types>
+        <members>DashboardPal</members>
         <members>Lwc_App</members>
         <name>AuraDefinitionBundle</name>
     </types>
