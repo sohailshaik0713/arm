@@ -19,6 +19,7 @@ trigger AccountTrigger on Account (before insert,before update) {
                 }
                 When 'Energy'{
                     a.AnnualRevenue = 7000000;
+                    //changes done
                 }
             }
         }
