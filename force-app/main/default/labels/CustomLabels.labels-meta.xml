@@ -4,8 +4,8 @@
         <fullName>Demo</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>Demo</shortDescription>
-        <value>Testing for LWC component</value>
+        <shortDescription>Demo for AutoRabit</shortDescription>
+        <value>Testing for AutoRabit Deployment</value>
     </labels>
     <labels>
         <fullName>Demo2</fullName>
