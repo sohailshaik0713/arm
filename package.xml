@@ -3680,6 +3680,7 @@
         <members>ProductCategoryProduct.ProductId</members>
         <members>ProductConsumptionSchedule.ConsumptionScheduleId</members>
         <members>ProductConsumptionSchedule.ProductId</members>
+        <members>Project__c.Budget__c</members>
         <members>Project__c.Project_Closed_Date__c</members>
         <members>Project__c.Project_Duration__c</members>
         <members>Project__c.Project_Manager__c</members>
