@@ -581,6 +581,7 @@
         <members>LightningSales_UtilityBar</members>
         <members>LightningService_UtilityBar</members>
         <members>Opportunity_Record_Page</members>
+        <members>Order_Detail_Record_Page</members>
         <members>Travel_App_UtilityBar</members>
         <members>Zomato_UtilityBar</members>
         <members>undefined_UtilityBar</members>
