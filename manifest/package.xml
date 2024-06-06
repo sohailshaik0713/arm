@@ -822,6 +822,7 @@
         <members>ScorecardMetric</members>
         <members>ScratchOrgInfo</members>
         <members>Seller</members>
+        <members>Server__c</members>
         <members>ServiceAppointment</members>
         <members>ServiceAppointmentAttendee</members>
         <members>ServiceContract</members>
@@ -3991,6 +3992,7 @@
         <members>Seller.SalesAmount</members>
         <members>Seller.SellerTier</members>
         <members>Seller.SellerType</members>
+        <members>Server__c.IP_Address__c</members>
         <members>ServiceAppointment.AccountId</members>
         <members>ServiceAppointment.ActualDuration</members>
         <members>ServiceAppointment.ActualEndTime</members>
