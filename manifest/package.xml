@@ -1221,6 +1221,10 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>Test_Global_Value_Set</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
         <members>IframeWhiteListUrlSettings</members>
         <name>IframeWhiteListUrlSettings</name>
     </types>
