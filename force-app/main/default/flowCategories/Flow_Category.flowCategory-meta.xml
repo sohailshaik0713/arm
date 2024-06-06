@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowCategory xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowCategoryItems>
+        <flow>Assign_Owner_To_Permission_Set</flow>
+    </flowCategoryItems>
+    <flowCategoryItems>
+        <flow>Account_Screen_Flow</flow>
+    </flowCategoryItems>
+    <masterLabel>Flow_Category</masterLabel>
+</FlowCategory>
