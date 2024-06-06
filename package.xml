@@ -1327,6 +1327,8 @@
     <types>
         <members>Account.Account_RT</members>
         <members>Account.Account_RT_2</members>
+        <members>Automobile__c.Automobile_RT</members>
+        <members>Automobile__c.Automobile_RT_2</members>
         <members>BRE_Organisation__c.Organisation</members>
         <members>BRE_Organisation__c.Warehouse</members>
         <members>Bawarchi__c.Non_Veg</members>
