@@ -1419,6 +1419,7 @@
         <members>Job_Application__c.Job_Application</members>
         <members>Job_Posting__c.Job_Posting</members>
         <members>Position__c.Position</members>
+        <members>Project__c.Project_CL</members>
         <members>Review__c.Review</members>
         <name>CompactLayout</name>
     </types>
