@@ -90,6 +90,15 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
                 </fields>
+                <fields>
+                    <name>Currency</name>
+                    <dataType>Currency</dataType>
+                    <fieldText>Currency</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <scale>0</scale>
+                </fields>
                 <inputParameters>
                     <name>width</name>
                     <value>
