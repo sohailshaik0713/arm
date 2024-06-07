@@ -622,6 +622,7 @@
         <members>Bike__c</members>
         <members>Book__c</members>
         <members>Bottle__c</members>
+        <members>Bus__c</members>
         <members>BusinessBrand</members>
         <members>BuyerGroup</members>
         <members>Campaign</members>
@@ -2076,6 +2077,8 @@
         <members>Book__c.Price__c</members>
         <members>Bottle__c.Price__c</members>
         <members>Bottle__c.Quantity__c</members>
+        <members>Bus__c.Model__c</members>
+        <members>Bus__c.Number__c</members>
         <members>BusinessBrand.Name</members>
         <members>BusinessBrand.OrgId</members>
         <members>BusinessBrand.OwnerId</members>
