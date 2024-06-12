@@ -1251,6 +1251,7 @@
         <members>Chatter External User</members>
         <members>Chatter Free User</members>
         <members>Chatter Moderator User</members>
+        <members>Cloned Admin</members>
         <members>Cloned Marketing User</members>
         <members>ContractManager</members>
         <members>Cross Org Data Proxy User</members>
